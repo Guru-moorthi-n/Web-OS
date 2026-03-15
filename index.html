@@ -7,14 +7,28 @@
     <title>Web OS - Desktop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <div id="Desktop">
-        <div class="box" id="Header" style="grid-area: box-1">Web OS</div>
+        <div class="box" id="Header" style="grid-area: box-1">
+            Web OS
+            <div id="MobileMenuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div id="MobileNavMenu">
+            <div id="m1">Notes</div>
+            <div id="m2">Todo</div>
+            <div id="m3">Music</div>
+            <div id="m4">Calendar</div>
+            <div id="m5">Settings</div>
+        </div>
         <div class="box" id="Wallpaper" style="grid-area: box-2">
             <!-- Calendar -->
             <div id="CalendarModal" class="Modal">
@@ -24,7 +38,8 @@
                         <div class="centerHeader">
                             <span id="monthYear" class="monthText"></span>`
                             <select id="yearSelect" class="yearSelect"></select>
-                            <button id="todayBtn" class="todayIconBtn" title="Go to Today"><i class="fa-solid fa-bullseye"></i></button>
+                            <button id="todayBtn" class="todayIconBtn" title="Go to Today"><i
+                                    class="fa-solid fa-bullseye"></i></button>
                         </div>
                         <button id="nextBtn" class="navBtn"><i class="fa-solid fa-chevron-right"></i></button>
                     </div>
@@ -74,7 +89,8 @@
                         <div id="Music-Body">
                             <div id="UploadMusic" class="MB-Items">
                                 <label for="musicUpload">
-                                    <img id="UploadMusicIcon" src="./assets/icons/upload-music.png" alt="Upload music" />
+                                    <img id="UploadMusicIcon" src="./assets/icons/upload-music.png"
+                                        alt="Upload music" />
                                 </label>
                                 <input type="file" id="musicUpload" accept="audio/*" style="display: none;" />
                             </div>
@@ -277,10 +293,12 @@
                         <img src="./assets/icons/music.png" height="20" alt="Music" style="padding-right: 2px;">Music
                     </div>
                     <div id="ts4" class="tsItems">
-                        <img src="./assets/icons/calendar.png" height="20" alt="Calendar" style="padding-right: 2px;">Calendar
+                        <img src="./assets/icons/calendar.png" height="20" alt="Calendar"
+                            style="padding-right: 2px;">Calendar
                     </div>
                     <div id="ts5" class="tsItems">
-                        <img src="./assets/icons/settings.png" height="20" alt="Settings" style="padding-right: 2px;">Settings
+                        <img src="./assets/icons/settings.png" height="20" alt="Settings"
+                            style="padding-right: 2px;">Settings
                     </div>
                 </div>
             </div>
@@ -294,4 +312,5 @@
 
     <script src="./js/system.js" charset="UTF-8"></script>
 </body>
+
 </html>
