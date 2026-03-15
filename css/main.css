@@ -1199,8 +1199,8 @@ ul li span:hover {
     top: 55px;
     right: 10px;
     width: 160px;
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(20px);
     border-radius: 8px;
     display: none;
     flex-direction: column;
