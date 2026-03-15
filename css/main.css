@@ -83,7 +83,7 @@ body {
 
 @media (min-width: 300px) and (max-width: 767px) {
   body, html {
-    overflow-y: scroll;
+    overflow: scroll;
   }
   #DesktopIcons{
     display: grid;
