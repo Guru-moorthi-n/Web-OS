@@ -82,6 +82,9 @@ body {
 }
 
 @media (min-width: 300px) and (max-width: 767px) {
+  body, html {
+    overflow-y: scroll;
+  }
   #DesktopIcons{
     display: grid;
     grid-template-rows: repeat(3, 1fr);
